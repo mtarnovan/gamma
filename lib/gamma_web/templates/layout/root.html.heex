@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="csrf-token" content={csrf_token_value()} />
+    <%= live_title_tag(assigns[:page_title] || "Gamma", suffix: " · Phoenix Framework") %>
+    <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn, "/assets/app.css")} />
+    <script
+      defer
+      phx-track-static
+      type="text/javascript"
+      src={Routes.static_path(@conn, "/assets/app.js")}
+    >
+    </script>
+    <style>
+      @font-face {
+        font-family: "CircularStd";
+        src: url("https://assets.steadyhq.com/fonts/circular-std-extended/book.eot");
+        src: url("https://assets.steadyhq.com/fonts/circular-std-extended/book.eot?#iefix")
+            format("embedded-opentype"),
+          url("https://assets.steadyhq.com/fonts/circular-std-extended/book.woff")
+            format("woff"),
+          url("https://assets.steadyhq.com/fonts/circular-std-extended/book.ttf")
+            format("truetype"),
+          url("https://assets.steadyhq.com/fonts/circular-std-extended/book.svg#bcc26993292869431e54c666aafa8fcd")
+            format("svg");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "CircularStd";
+        src: url("https://assets.steadyhq.com/fonts/circular-std-extended/bold.eot");
+        src: url("https://assets.steadyhq.com/fonts/circular-std-extended/bold.eot?#iefix")
+            format("embedded-opentype"),
+          url("https://assets.steadyhq.com/fonts/circular-std-extended/bold.woff")
+            format("woff"),
+          url("https://assets.steadyhq.com/fonts/circular-std-extended/bold.ttf")
+            format("truetype"),
+          url("https://assets.steadyhq.com/fonts/circular-std-extended/bold.svg#bcc26993292869431e54c666aafa8fcd")
+            format("svg");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }     
+    </style>
+  </head>
+  <body>
+    <%= @inner_content %>
+  </body>
+</html>

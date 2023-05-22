@@ -1,0 +1,109 @@
+<div class="md:container md:mx-auto pt-10">
+  <div class="grid grid-cols-6 gap-4 place-items-center">
+    <div class="col-start-2 place-self-end -mr-8 -mb-4">
+      <%= GammaWeb.SVGView.render("_wings_left.html") %>
+    </div>
+    <div class="col-span-2">
+      <h1 class="text-5xl font-bold leading-normal">
+        Power
+        <span class="bg-gradient-to-r from-pinky to-powder inline-block text-transparent bg-clip-text">
+          your project
+        </span>
+      </h1>
+    </div>
+    <div class="place-self-start -ml-8 -mb-4">
+      <%= GammaWeb.SVGView.render("_wings_right.html") %>
+    </div>
+    <p class="col-start-3 col-span-2 text-center leading-relaxed text-lg px-8">
+      Steady helps you build a membership programme that connects with
+      your community—and funds your best creative work yet.
+    </p>
+    <div class="col-start-3 col-span-2">
+      <button class="bg-primary hover:bg-primary-off text-white font-bold text-xs tracking-widest py-4 px-6 uppercase drop-shadow-xl ease-in-out transition-colors duration-100">
+        Start for free
+      </button>
+    </div>
+  </div>
+  <div class="bg-[url(https://assets.steadyhq.com/gfx/promotional_page/home_rising_creators_blob_desktop.svg)] bg-contain bg-no-repeat bg-[50%_50%] text-center py-10 px-20">
+    <h2 class="text-3xl font-bold pt-24">
+      3 rising creators on Steady
+    </h2>
+    <p class="text-lg pt-4">
+      These Steady creators just launched and are already generating sustainable funding for their projects.
+    </p>
+    <p class="text-lg font-bold">
+      See you here next month?
+    </p>
+
+    <div class="grid grid-cols-3 mx-40 pt-8">
+      <div class="max-w-xs rounded-lg overflow-hidden shadow-lg text-left bg-white">
+        <img
+          class="w-full"
+          src="https://assets.steadyhq.com/gfx/promotional_page/home_rising_creators_iran_journal.png?auto=format"
+          alt="Iran Journal"
+        />
+        <div class="h-32 px-6 py-4">
+          <div class="font-bold text-xl mb-2">Iran Journal</div>
+          <p class="text-gray-600 text-sm">
+            Transparent journalism from Iran, independent of state media.
+          </p>
+        </div>
+        <div class="px-6 py-4 uppercase text-xs font-bold tracking-widest">
+          328 paying members
+        </div>
+      </div>
+
+      <div class="max-w-xs rounded-lg overflow-hidden shadow-lg text-left bg-white">
+        <img
+          class="w-full"
+          src="https://assets.steadyhq.com/gfx/promotional_page/home_rising_creators_nobodytoldme.png?auto=format&w=669"
+          alt="NOBODYTOLDME"
+        />
+        <div class="h32 px-6 py-4">
+          <div class="font-bold text-xl mb-2">NOBODYTOLDME</div>
+          <p class="text-gray-600 text-sm">
+            A weekly newsletter on menopause. By nutritional scientist Susanne Liedtke & Dr. Christina Enzmann.
+          </p>
+        </div>
+        <div class="px-6 py-4 uppercase text-xs font-bold tracking-widest">
+          43 paying members
+        </div>
+      </div>
+
+      <div class="max-w-xs rounded-lg overflow-hidden shadow-lg text-left bg-white">
+        <img
+          class="w-full"
+          src="https://assets.steadyhq.com/gfx/promotional_page/home_rising_creators_kobuk.png?auto=format"
+          alt="Iran Journal"
+        />
+        <div class="h32 px-6 py-4">
+          <div class="font-bold text-xl mb-2">Kobuk!</div>
+          <p class="text-gray-600 text-sm">
+            A media watchblog exposing errors, false reports and structural problems in mass media.
+          </p>
+        </div>
+        <div class="px-6 py-4 uppercase text-xs font-bold tracking-widest">
+          123 paying members
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center pt-10 pb-20">
+      <button class="bg-white hover:bg-gray-200 text-primary border border-primary font-bold text-xs tracking-widest py-4 px-6 uppercase drop-shadow-xl mr-4 ease-in-out transition-colors duration-100">
+        Discover Steady Creators
+      </button>
+      <button class="bg-primary hover:bg-primary-off text-white font-bold text-xs tracking-widest py-4 px-6 uppercase drop-shadow-xl ease-in-out transition-colors duration-100">
+        Start Now
+      </button>
+    </div>
+  </div>
+
+  <div class="mt-4">
+    <p class="text-4xl text-center font-bold mb-6">
+      As featured in
+    </p>
+    <div class="flex justify-evenly gap-4 mb-40 fill-gray-400 mx-40">
+      <%= render "_logos_endorse.html" %>
+    </div>
+  </div>
+</div>
